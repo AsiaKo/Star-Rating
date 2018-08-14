@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Star Rating</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="rating">
+		<input type="radio" name="star 1" id="star1" value="1"> <label for="star1"></label>
+		<input type="radio" name="star 2" id="star2" value="2"> <label for="star2"></label>
+		<input type="radio" name="star 3" id="star3" value="3"> <label for="star3"></label>
+		<input type="radio" name="star 4" id="star4" value="4"> <label for="star4"></label>
+		<input type="radio" name="star 5" id="star5" value="5"> <label for="star5"></label>
+
+		<button>Rate me</button>
+	<p></p>
+	</div>
+	
+
+	<script>
+
+		let stars = document.querySelectorAll('input');
+		 let starArr = Array.from(stars);
+	starArr.forEach(function(star){
+		
+	});
+
+
+let button = document.querySelector('button');
+
+button.addEventListener('click', displayRating);
+
+function displayRating(){
+	console.log('button clicked');
+
+
+}
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

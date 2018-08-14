@@ -1,0 +1,148 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid red;*/
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+h1 {
+
+}
+.rating {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.rating input {
+	display: none;
+
+}
+
+.rating label {
+	display: block;
+	cursor: pointer;
+	width: 50px;
+	/*background: #ccc;*/
+}
+.rating label:before {
+	/*using fontAwesome*/
+/*content: '\f005';*/
+/*font-family: fontAwesome;*/
+
+
+/*	content:'⭐️';*/
+content:'☆';
+position: relative;
+display: block;
+font-size: 50px;
+color: black;
+
+}
+
+.rating label:after {
+content:'★';
+position: absolute;
+display: block;
+font-size: 50px;
+color:black;
+top: 0;
+opacity: 0;
+transition: .5s;
+text-shadow: 0  2px 5px rgba(0, 0, 0, .5);
+
+}
+
+
+.rating label:hover:after, 
+.rating label:hover ~ label:after, 
+.rating input:checked ~ label:after {
+	opacity: 1;
+}
+
+
+
+/*with font awesome */
+
+.rating2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.rating2 input {
+	display: none;
+}
+
+.rating2 label {
+	display: block;
+	cursor: pointer;
+	width: 50px;
+}
+.rating2 label:before {
+	content: '\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 50px;
+	color: #101010;
+
+}
+
+.rating2 label:after {
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 50px;
+	color:#1f9cff;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0  2px 5px rgba(0, 0, 0, .5);
+}
+
+.rating2 label:hover:after, 
+.rating2 label:hover ~ label:after, 
+.rating2 input:checked ~ label:after {
+	opacity: 1;
+}
+
+button {
+	position: absolute;
+	top: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 1em 2em;
+
+}
+
+p {
+	position: absolute;
+	top: 200%;
+	width :300px;
+	height: 50px;
+	background: #FF0;
+	left: 50%;
+	transform: translateX( -50%);
+
+}
+
+
+
+
+
